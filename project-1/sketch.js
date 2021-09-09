@@ -14,7 +14,7 @@ function draw() {
   background(51);
   let s = 'Im a broken daffodil blown memory deleted, I live in my emails and text messages, waiting for data to spread anew like dusty wings' ;
 fill(50);
-textSize(35);
+textSize(32);
 text(s+mouseX+mouseY, 100, 100-mouseY, 100, 200+mouseY); // Text wraps within text box
   // Let's pick an angle 0 to 90 degrees based on the mouse position
   theta = map(mouseX+mouseY,0,width,0,PI/2);
