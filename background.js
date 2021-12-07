@@ -83,7 +83,7 @@ function draw() {
   }
 
   if (filled) {
-    fill(random(255));
+    fill(random(100));
   } else {
     noFill();
   }
