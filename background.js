@@ -1,6 +1,6 @@
 // P_2_2_3_01
 //
-// Generative Gestaltung ñ Creative Coding im Web
+// Generative Gestaltung ñ Creative Coding in Web
 // ISBN: 978-3-87439-902-9, First Edition, Hermann Schmidt, Mainz, 2018
 // Benedikt Groﬂ, Hartmut Bohnacker, Julia Laub, Claudius Lazzeroni
 // with contributions by Joey Lee and Niels Poldervaart
@@ -64,9 +64,9 @@ function setup() {
     y.push(sin(angle * i) * initRadius);
   }
 
-  stroke(0, 50);
+  stroke(240, 0);
   strokeWeight(0.75);
-  background(255);
+  background(0);
 }
 
 function draw() {
@@ -117,7 +117,7 @@ function mousePressed() {
 
 function keyReleased() {
   if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
-  if (keyCode == DELETE || keyCode == BACKSPACE) background(255);
+  if (keyCode == DELETE || keyCode == BACKSPACE) background(0);
   if (key == '1') filled = false;
   if (key == '2') filled = true;
 
