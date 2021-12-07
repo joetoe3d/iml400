@@ -64,9 +64,9 @@ function setup() {
     y.push(sin(angle * i) * initRadius);
   }
 
-  stroke(240, 0);
+  stroke(white);
   strokeWeight(0.75);
-  background(0);
+  background(black);
 }
 
 function draw() {
