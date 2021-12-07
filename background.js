@@ -45,7 +45,16 @@ var filled = false;
 var freeze = false;
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    
+
+        var clientHeight = document.getElementById('about').clientHeight;
+        var clientWidth = document.getElementById('about').clientWidth;
+
+        var cnv = createCanvas(clientWidth, clientHeight);
+        cnv.parent("about");
+        background(255);
+    
+   
 
     // init shape
     centerX = width / 2;
@@ -58,7 +67,7 @@ function setup() {
 
     stroke(0, 50);
     strokeWeight(0.75);
-    background(255);
+
 }
 
 function draw() {
