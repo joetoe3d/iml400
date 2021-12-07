@@ -45,8 +45,8 @@ var filled = false;
 var freeze = false;
 
 function setup() {
-    var myCanvas = createCanvas(windowWidth, windowHeight);
-    myCanvas.parent("bg");
+    canvas = createCanvas(windowWidth, windowHeight);
+    canvas.parent("bg");
 
   // init shape
   centerX = width / 2;
